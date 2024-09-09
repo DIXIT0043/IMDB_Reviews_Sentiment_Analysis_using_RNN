@@ -12,7 +12,7 @@ def decode_review(test_review):
     decoded_review = ' '.join([reverse_word_index.get(i-3,'?') for i in test_review])
     return decoded_review
 
-model = load_model(r'C:\Users\kumar\OneDrive\Desktop\Gen AI\RNN_Project\simple_RNN.h5')
+model = load_model('simple_RNN.h5')
 model.summary()
 
 def preprocess_text(text):
